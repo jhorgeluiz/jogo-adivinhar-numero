@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="/estilo/menu.css" media="screen and (orientation: landscape),(orientation: portrait)">
+  
+</head>
+<body>
+  <header>
+    <h1>ADIVINHE O NUMERO</h1>
+  </header>
+
+  <main id="container_principal">
+   
+    <section class="menu">
+      <article class="article1">
+        <h2>MENU</h2>
+        <p>1 - Jogar</p>
+        <p>2 - Sair</p>
+      </article>
+
+      <article class="article2">
+        <label class="digite_cod" for="codigo">Digite o codigo: </label>  <br>
+        <input type="number" id="codigo" min="1" max="2"> <br>
+        <button class="botao_enviar" onclick="escolher()">Enviar</button>
+      </article>
+    </section>
+
+    <section id="container_tela_2" class="tela_2">
+      <article class="tentativas">
+        <h2>VOCE TEM 10 TENTATIVAS, BOA SORTE!!</h2>
+      </article>
+
+      <p class="entre_1_100">Digite numeros entre 1 e 100</p>
+
+      <article class="form2">
+        <label class="digite_num" for="numero">Digite o numero: </label> <br>
+        <input type="number" id="numero">  <br>
+        <button class="botao_enviar" onclick="chutar()">Chutar</button>
+        <button class="botao_limpar" onclick="Limpar()">Limpar</button>
+      </article>
+    </section>
+    
+    <div id="res"></div>
+
+    <div id="res2"></div>
+  </main>
+
+  <footer class="footer1">
+    <button id="sair" class="botaosair" onclick="Sair()">Sair -></button>
+  </footer>
+  <footer class="footer2">
+    <h2>Desenvolvido por Jorge Luiz</h2>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
