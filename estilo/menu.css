@@ -461,7 +461,7 @@
     }
     body {
         background-image: url(../img-font/fundo2.jpg);
-        background-position: center;
+        background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
